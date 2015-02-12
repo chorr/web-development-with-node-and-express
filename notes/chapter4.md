@@ -56,3 +56,19 @@ Git는 `git add` 실행했을 때 반영되는 "스테이징 영역"을 가진�
 
     git checkout ch04
 
+## npm Packages
+
+- npm 패키지 의존관계
+    - 버저닝 기준은 [semver](http://semver.org)
+    - `node_modules` 디렉토리는 저장소 관리대상인가? 아니다.
+    
+## Project Metadata
+
+- npm 패키지 등록 시 중요한 정보
+- README 파일도 잘 활용하면 좋다.
+
+## Node Modules
+
+- Node 모듈은 코드를 모듈화하는 메커니즘
+- npm package는 모듈, 프로젝트 자체를 버저닝하고 참조하는 용도
+
