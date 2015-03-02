@@ -1,0 +1,28 @@
+<h1>input contact</h1>
+
+<form action="/process-contact" method="post">
+    <div class="form-group">
+        <input id="name" type="text" name="name" class="form-control" placeholder="name">
+    </div>
+    <div class="form-group">
+        <input id="email" type="text" name="email" class="form-control" placeholder="email">
+    </div>
+    <button type="submit" class="btn btn-default form-submit">form submit</button>
+    <button class="btn btn-default ajax-submit">AJAX submit</button>
+</form>
+
+<script>
+$(function () {
+    'use strict';
+    $('.ajax-submit').click(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: '/process-contact',
+            type: 'post',
+            data: $('form').serialize()
+        }).done(function (resp) {
+            console.log(resp);
+        });
+    });
+});
+</script>
