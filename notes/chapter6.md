@@ -233,7 +233,7 @@ Link: <http://api.example.com/users?page=2>; rel="next",
 ### res.locals, res.render(view \[, locals\] \[, callback\])
 - res.locals는 뷰 렌더링을 위한 기본 컨텍스트 객체 (request/response 사이클에서만 의미있음)
 - res.render는 설정된 템플릿 엔진으로 렌더링
-    - locals 인자는 res.locals에 의해 오버라이드
+    - res.locals는 locals에 의해 오버라이드
     - 기본 응답 코드는 200; 별도의 코드를 사용하고 싶다면 res.status 사용
 
 ## 더 많은 정보
