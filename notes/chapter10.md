@@ -172,12 +172,16 @@ app.use(cartValidation.checkGuestCounts);
 - 대부분의 경우 Connect가 필요할것이고 별도로 설치하여 사용하도록
 
 ### basicAuth
-```app.use(connect.basicAuth)();```
+```
+app.use(connect.basicAuth)();
+```
 기본적인 접근제어 인증 제공. 보안을 위해서 HTTPS 통해서만 사용해야 한다.
 
 
 ### body-parser
-```app.use(require('body-parser')());```
+```
+app.use(require('body-parser')());
+```
 Connect 제거되고 나서는 아래와 같이 json 또는 urlencoded 필요한 부분 각자 사용.
 
 ### json, urlencoded
@@ -188,7 +192,9 @@ app.use(bodyParser.urlencoded());
 ```
 
 ### compress
-```app.use(connect.compress);```
+```
+app.use(connect.compress);
+```
 응답 데이터 gzip에 사용. 이 미들웨어 이전에 디버깅, 로그 미들웨어 사용하길 권장.
 
 ### 목록들

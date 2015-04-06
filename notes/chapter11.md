@@ -12,7 +12,6 @@
     - 믿을만한 채널을 통해 발송되고 스팸으로 분류될 가능성을 줄여줌
 - MTA(Mail Transfer Agent)
     - 최종 목적지에 실제로 발송하는 서비스
-
 - MSA 접근을 위한 쉬운 방법은 알려진 무료 메일 서비스를 활용
     - 단기간의 해결책일뿐 (발송에 제한이 많다)
 - 실서비스 단계에선 전문 MSA로 전환 - Sendgrid 또는 Amazon Simple Email Service(SES)
@@ -60,7 +59,7 @@ var mailTransport = nodemailer.createTransport('SMTP', {
     }
 });
 ```
-\(!) Nodemailer 1.0 업데이트 이후에 위 예제로 동작하지 않는다. [마이그레이션 가이드](https://andrisreinman.com/nodemailer-v1-0/#migrationguide) 참조.
+:exclamation: Nodemailer 1.0 업데이트 이후에 위 예제로 동작하지 않는다. [마이그레이션 가이드](https://andrisreinman.com/nodemailer-v1-0/#migrationguide) 참조.
 
 MSA 대신 [직접 SMTP 설정](https://github.com/andris9/nodemailer-smtp-transport#usage)하여 사용도 가능하다.
 
