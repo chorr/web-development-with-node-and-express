@@ -144,7 +144,7 @@ app.get('/epic-fail', function (req, res) {
 ```
 
 위의 라우터를 추가하고 접근해보면 Node 서버 자체가 죽게 된다.
-process.nextTick이 동기로 실행되면서 더이상 기존 request 컨텐스트를 가지지 않게되고,
+process.nextTick이 비동기로 실행되면서 더이상 기존 request 컨텍스트를 가지지 않게되고,
 이 때 에러가 발생하면 process의 에러가 발생하며 모든 동작이 중단 되기 때문이다.
 
 이를 해결하기 위해 Node는 _uncaughtException 이벤트_와 _domains_ 두가지 매커니즘을 가지고 있다.

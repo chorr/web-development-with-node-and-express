@@ -195,10 +195,10 @@ app.use(bodyParser.urlencoded());
 ```
 app.use(connect.compress);
 ```
-응답 데이터 gzip에 사용. 이 미들웨어 이전에 디버깅, 로그 미들웨어 사용하길 권장.
+응답 데이터 gzip에 사용. 미들웨어 앞부분 디버깅, 로그 미들웨어 이전에 사용하길 권장.
 
 ### 목록들
-- cookie-parse
+- cookie-parser
 - cookie-session
 - express-session
 - csurf
